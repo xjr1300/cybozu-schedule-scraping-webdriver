@@ -55,6 +55,3 @@ if __name__ == "__main__":
     # Chrome WebDriverを起動
     with start_chrome_driver(headless=headless) as driver:
         main(driver)
-    import time
-
-    time.sleep(10)

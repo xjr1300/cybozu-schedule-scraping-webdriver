@@ -1,10 +1,10 @@
 [tool.poetry]
-name = "cybozu-schedule-scraping-wd"
+name = "cybozu-schedule-scraping-webdriver"
 version = "0.1.0"
 description = ""
 authors = ["Yasunori Ishiguro <ishiguro-y@dainichi-consul.co.jp>"]
 readme = "README.md"
-packages = [{ include = "cybozu_schedule_scraping_wd" }]
+packages = [{ include = "cybozu_schedule_scraping_webdriver" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
