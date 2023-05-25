@@ -1,6 +1,6 @@
 import os
 from dataclasses import dataclass
-from datetime import date, time
+from datetime import date
 from getpass import getpass
 
 # パッケージルートディレクトリ
