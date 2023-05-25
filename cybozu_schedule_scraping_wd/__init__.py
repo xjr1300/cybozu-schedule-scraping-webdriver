@@ -6,9 +6,23 @@ from getpass import getpass
 # パッケージルートディレクトリ
 ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+# サイボウズルートURL
+CYBOZU_ROOT_URL = "http://192.168.220.14/scripts/cbag/ag.exe?"
+
 
 class CBSSWDException(Exception):
     """Cybozu Schedule Scraping WebDriverの例外クラス"""
+
+
+def cybozu_page_url(get_params: str) -> str:
+    """サイボウズページのURLを生成して返却する。
+
+    引数:
+        get_params: GETパラメーター。
+    戻り値:
+        サイボウズページのURL。
+    """
+    return CYBOZU_ROOT_URL + get_params
 
 
 @dataclass
